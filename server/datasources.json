@@ -1,0 +1,12 @@
+{
+  "db": {
+    "host": "ds143132.mlab.com",
+    "port": 43132,
+    "url": "mongodb://user_starwars:pwd_starwars81@ds143132.mlab.com:43132/starwars_db",
+    "database": "starwars_db",
+    "password": "pwd_starwars81",
+    "name": "db",
+    "user": "user_starwars",
+    "connector": "mongodb"
+  }
+}

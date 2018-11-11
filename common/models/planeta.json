@@ -1,0 +1,47 @@
+{
+  "name": "planeta",
+  "plural": "planetas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "clima": {
+      "type": "string",
+      "required": true
+    },
+    "terreno": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "checkAparicoesFilmes": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "nome",
+          "type": "string",
+          "http": {
+            "source": "query"
+          }
+        }
+      ],
+      "returns": {
+        "arg": "nomePlaneta",
+        "type": "string"
+      },
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
+}
